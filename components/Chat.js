@@ -5,6 +5,7 @@ function Chat(id, users) {
     <Container>
       <UserAvatar />
       <p>Recepient Email</p>
+      <div></div>
     </Container>
   );
 }
