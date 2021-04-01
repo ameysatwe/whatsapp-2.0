@@ -54,9 +54,12 @@ function Sidebar() {
         <SearchInput placeholder="Search in chats" />
       </Search>
       <SidebarButton onClick={createChat}>Start a new Chat</SidebarButton>
-      {/* List of chats */}
-      {chatsSnapshot?.docs.map((chat) => {
+
+      {/* {chatsSnapshot?.docs.forEach((chat) => {
         <Chat key={chat.id} id={chat.id} />;
+      })} */}
+      {chatsSnapshot?.docs.map((chat) => {
+        return <Chat key={chat.id} id={chat.id} />;
       })}
     </Container>
   );
