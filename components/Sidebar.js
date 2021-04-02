@@ -31,6 +31,7 @@ function Sidebar() {
       });
     }
   };
+
   const chatAlreadyExists = (recepientEmail) =>
     !!chatsSnapshot?.docs.find(
       (chat) =>
@@ -55,11 +56,8 @@ function Sidebar() {
       </Search>
       <SidebarButton onClick={createChat}>Start a new Chat</SidebarButton>
 
-      {/* {chatsSnapshot?.docs.forEach((chat) => {
-        <Chat key={chat.id} id={chat.id} />;
-      })} */}
       {chatsSnapshot?.docs.map((chat) => {
-        return <Chat key={chat.id} id={chat.id} />;
+        return <Chat key={chat.id} id={chat.id} users={chat.data().users} />;
       })}
     </Container>
   );
