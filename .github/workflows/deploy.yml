@@ -17,6 +17,5 @@ jobs:
             source ~/.nvm/nvm.sh
             cd whatsapp-2.0
             git pull origin main
-            nvm --help
-            # npm run build
-            # pm2 restart whatsapp-2.0
+            npm run build
+            pm2 restart whatsapp-2.0
