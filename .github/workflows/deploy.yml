@@ -15,6 +15,6 @@ jobs:
           script: |
             cd whatsapp-2.0
             git pull origin main
-            whoami
+            nvm --help
             # npm run build
             # pm2 restart whatsapp-2.0
