@@ -16,5 +16,5 @@ jobs:
             cd whatsapp-2.0
             git pull origin main
             whoami
-            npm run build
-            pm2 restart whatsapp-2.0
+            # npm run build
+            # pm2 restart whatsapp-2.0
